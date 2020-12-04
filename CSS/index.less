@@ -3,3 +3,251 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+// 引入字体
+@font-face{
+    font-family: electronicFont;
+    src: url("../font/DS-DIGIT.TTF");
+}
+
+
+li{
+    list-style-type: none;
+}
+
+body{
+    background: url("../images/bg.jpg") no-repeat top center;
+
+    // 头部
+    .header{
+        height:1.25rem;
+        background: url("../images/head_bg.png") no-repeat;
+        background-size:100% 100%;
+        text-align: center;
+        position: relative;
+
+        // 标题h1
+        h1{
+            color: white;
+            font-size: 38/80rem;
+            line-height: 1rem;
+        }
+
+        // 时间部分
+        .timestamp{
+            position: absolute;
+            right:30/80rem;
+            bottom:0;
+            font-size: 20/80rem;
+            line-height: 75/80rem;
+            color: rgba(255,255,255,0.7);
+        }
+    }
+    // 主体部分
+    .mainbox{
+        min-width: 940px;
+        max-width: 1800px;
+        // background-color: #bfa;
+        width: 100%;
+        display: flex;
+        .columns{
+            flex:3;
+            &:nth-child(2){
+                flex:5
+            }
+        }
+        // 中间样式
+        .center{
+            margin:0 10/80rem 15/80rem;
+            .no{
+                background-color: rgba(101,132,226,0.1);
+                padding: 15/80rem;
+                
+                .no-hd{
+                    border:1px solid rgba(25,186,139,0.17);
+                    display: flex;
+                    position: relative;
+                    margin-bottom: 10/80rem;
+                    li{
+                        line-height: 80/80rem;
+                        font-size:70/80rem;
+                        color: #ffeb7b;
+                        font-family:electronicFont ;
+                        flex:1;
+                        text-align: center;
+                    }
+                    &::before{
+                        position: absolute;
+                        content:"";
+                        top:0;
+                        left:0;
+                        width: 30/80rem;
+                        height: 10/80rem;
+                        border-left:3px solid #02a6b5;
+                        border-top:3px solid #02a6b5;
+                    }
+                    &::after{
+                        position: absolute;
+                        content:"";
+                        bottom:0;
+                        right:0;
+                        width: 30/80rem;
+                        height: 10/80rem;
+                        border-right:3px solid #02a6b5;
+                        border-bottom:3px solid #02a6b5;
+                    }
+                }
+                .no-body{
+                    display: flex;
+                    li{
+                        flex:1;
+                        line-height: 40/80rem;
+                        font-size:22/80rem;
+                        text-align: center;
+                        color: white;
+                        opacity: 0.6;
+                    }
+                }
+            }
+            .map{
+                position: relative;
+                height: 810/80rem;
+              .map1{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                // background-color: red;
+                z-index:9;
+                height: 518/80rem;
+                width: 518/80rem;
+                background-image: url("../images/map.png");
+                background-size: 100% 100%;
+                opacity: 0.3;
+            }
+            .map2{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                // z-index:9;
+                height: 643/80rem;
+                width: 643/80rem;
+                background-image: url("../images/lbx.png");
+                background-size: 100% 100%;
+                opacity: 0.6;
+                animation: rotate1 15s linear infinite ;
+            }
+            .map3{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                // z-index:9;
+                height: 566/80rem;
+                width: 566/80rem;
+                background-image: url("../images/jt.png");
+                background-size: 100% 100%;
+                animation: rotate2 10s linear infinite ;
+            }
+
+            }
+        }
+    }
+
+    // 动画
+    @keyframes rotate1 {
+        from{
+            transform: translate(-50%,-50%)
+            rotate(0)
+        }
+        to{
+            transform: translate(-50%,-50%)
+            rotate(1turn)
+        }
+    }
+
+    @keyframes rotate2 {
+        from{
+            transform: translate(-50%,-50%)
+            rotate(0)
+        }
+        to{
+            transform: translate(-50%,-50%)
+            rotate(-1turn)
+        }
+    }
+
+
+    // 公共样式
+    .pannel{
+        height: 310/80rem;
+        border:1px solid rgba(25,186,139,0.17);
+        background-image: url("../images/line\(1\).png");
+        background-size: 100% 100%;
+        padding:0 15/80rem 40/80rem;
+        margin-bottom: 15/80rem;
+        position: relative;
+        &::before{
+            content:"";
+            position: absolute;
+            width:10/80rem;
+            height: 10/80rem;
+            top:0;
+            left:0;
+            // background-color: red;
+            border-left:3px solid #02a6b5;
+            border-top:3px solid #02a6b5;
+        }
+        &::after{
+            content:"";
+            position: absolute;
+            width:10/80rem;
+            height: 10/80rem;
+            top:0;
+            right:0;
+            // background-color: red;
+            border-right:3px solid #02a6b5;
+            border-top:3px solid #02a6b5;
+        }
+        h2{
+            line-height: 48/80rem;
+            color: white;
+            font-size: 20/80rem;
+            text-align: center;
+        }
+        .content{
+            height: 240/80rem;
+            background-color: #bfa;
+        }
+        .bottom-pannel{
+            position: absolute;
+            height: 13/80rem;
+            width: 100%;
+            bottom:0;
+            left: 0;
+            &::before{
+                content:"";
+                position: absolute;
+                width:10/80rem;
+                height: 10/80rem;
+                top:0;
+                left:0;
+                // background-color: red;
+                border-left:3px solid #02a6b5;
+                border-bottom:3px solid #02a6b5;
+            }
+            &::after{
+                content:"";
+                position: absolute;
+                width:10/80rem;
+                height: 10/80rem;
+                top:0;
+                right:0;
+                // background-color: red;
+                border-right:3px solid #02a6b5;
+                border-bottom:3px solid #02a6b5;
+            }
+        }
+    }
+}
