@@ -136,6 +136,18 @@ body .mainbox .center .map .map3 {
   background-size: 100% 100%;
   animation: rotate2 10s linear infinite ;
 }
+body .mainbox .center .map .map4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/philppines.png");
+  height: 8.325rem;
+  width: 8.325rem;
+  background-position: center;
+  background-size: 100% 100%;
+  opacity: 0.7;
+}
 @keyframes rotate1 {
   from {
     transform: translate(-50%, -50%) rotate(0);
@@ -153,7 +165,7 @@ body .mainbox .center .map .map3 {
   }
 }
 body .pannel {
-  height: 3.875rem;
+  height: 5.25rem;
   border: 1px solid rgba(25, 186, 139, 0.17);
   background-image: url("../images/line\(1\).png");
   background-size: 100% 100%;
@@ -187,9 +199,9 @@ body .pannel h2 {
   font-size: 0.25rem;
   text-align: center;
 }
-body .pannel .content {
-  height: 3rem;
-  background-color: #bfa;
+body .pannel .chart {
+  height: 4.5rem;
+  width: 7.125rem;
 }
 body .pannel .bottom-pannel {
   position: absolute;

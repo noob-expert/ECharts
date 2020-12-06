@@ -43,6 +43,15 @@ body{
             color: rgba(255,255,255,0.7);
         }
     }
+
+    // 左侧部分
+    .left{
+
+    }
+
+
+
+    
     // 主体部分
     .mainbox{
         min-width: 940px;
@@ -111,7 +120,7 @@ body{
             }
             .map{
                 position: relative;
-                height: 810/80rem;
+                height: 810/80rem;        
               .map1{
                 position: absolute;
                 top:50%;
@@ -150,6 +159,19 @@ body{
                 background-size: 100% 100%;
                 animation: rotate2 10s linear infinite ;
             }
+            .map4{
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                background-image: url("../images/philppines.png");
+                height: 666/80rem;
+                width: 666/80rem;
+                background-position: center;
+                background-size: 100% 100%;
+                opacity: 0.7;
+                // z-index:99
+            }
 
             }
         }
@@ -181,7 +203,7 @@ body{
 
     // 公共样式
     .pannel{
-        height: 310/80rem;
+        height: 420/80rem;
         border:1px solid rgba(25,186,139,0.17);
         background-image: url("../images/line\(1\).png");
         background-size: 100% 100%;
@@ -216,9 +238,10 @@ body{
             font-size: 20/80rem;
             text-align: center;
         }
-        .content{
-            height: 240/80rem;
-            background-color: #bfa;
+        .chart{
+            height: 360/80rem;
+            width:570/80rem;
+            // background-color: #bfa;
         }
         .bottom-pannel{
             position: absolute;

@@ -1,0 +1,23 @@
+{
+  "name": "ECharts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noob-expert/ECharts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noob-expert/ECharts/issues"
+  },
+  "homepage": "https://github.com/noob-expert/ECharts#readme",
+  "dependencies": {
+    "echarts": "^5.0.0"
+  }
+}
